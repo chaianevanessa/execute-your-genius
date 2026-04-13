@@ -55,7 +55,7 @@ const Index = () => {
           <p className="text-foreground/70 mb-8">
             E receba um protocolo personalizado para nunca mais travar na hora de executar
           </p>
-          <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,32</CTAButton>
+          <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,72</CTAButton>
           <p className="text-muted-foreground text-sm mt-4 italic">Menos que um curso que você não aplicou</p>
         </motion.div>
       </Section>
@@ -131,12 +131,13 @@ const Index = () => {
           <motion.h3 variants={fadeUp} custom={2} className="font-display text-xl md:text-2xl font-bold text-center mb-8">
             COMO FUNCIONA <span className="text-primary">(SIMPLES ASSIM)</span>:
           </motion.h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-4">
             {[
-              "Você clica no botão e faz o teste",
-              "Eu analiso seu perfil pessoalmente",
-              "Você recebe um áudio explicando SEU padrão + protocolo anti-trava",
-              "Aplica e para de travar (ou devolvo seu dinheiro)",
+              "Você clica no botão e garante seu Mapa L.E.D de Personalidade.",
+              "Após a compra, você é direcionada para fazer um teste rápido de personalidade.",
+              "Você me envia o resultado em PDF.",
+              "Eu analiso seu perfil, gravo um áudio só para você e te entrego um protocolo anti-trava personalizado.",
+              "Você recebe tudo em até 3 dias úteis após me enviar o resultado.",
             ].map((text, i) => (
               <motion.div
                 key={i}
@@ -253,10 +254,9 @@ const Index = () => {
                 ["🗺️", "Seu Mapa de Personalidade", "(análise personalizada)"],
                 ["🎧", "Áudio Explicativo", "(eu gravo só para você)"],
                 ["🛡️", "Protocolo Anti-Trava", "(passos personalizados)"],
-                ["💬", "7 dias de suporte", "(tire dúvidas direto comigo)"],
               ].map(([emoji, bold, desc], i) => (
                 <p key={i} className="flex items-center gap-3">
-                  <span className="text-2xl">{emoji}</span>
+                  <span className="text-2xl grayscale">{emoji}</span>
                   <span>
                     <strong className="text-foreground">{bold}</strong>{" "}
                     <span className="text-foreground/50">{desc}</span>
@@ -265,25 +265,31 @@ const Index = () => {
               ))}
             </div>
 
+            {/* BÔNUS */}
+            <div className="bg-gradient-to-r from-primary/10 to-accent/10 border-2 border-primary/30 rounded-xl p-6 mb-10">
+              <h3 className="font-display text-xl md:text-2xl font-bold text-primary mb-3">🎁 BÔNUS: 7 dias de suporte</h3>
+              <p className="text-foreground/80 text-lg">
+                A partir do envio da explicação e direcionamento, você tem <strong className="text-foreground">7 dias de suporte</strong> para tirar dúvidas sobre o mapa e sobre como aplicar na sua rotina e na sua vida profissional.
+              </p>
+            </div>
+
             <div className="text-center mb-10">
               <h3 className="font-display text-xl font-bold text-primary mb-4">INVESTIMENTO:</h3>
               <p className="text-foreground mb-1">
-                <span className="text-lg">12x de</span>{" "}
-                <span className="text-gradient-gold text-3xl md:text-4xl font-bold">R$ 30,<span className="text-4xl md:text-5xl">32</span></span>
+                <span className="text-base">12x de</span>{" "}
+                <span className="text-gradient-gold text-4xl md:text-5xl font-bold">R$ 30,<span className="text-2xl md:text-3xl">72</span></span>
               </p>
               <p className="text-foreground/50 mb-4">ou R$ 297,00 à vista</p>
-              <p className="text-foreground/60 italic">Menos que um jantar fora. Mais que sua próxima trava.</p>
             </div>
 
             <div className="bg-muted rounded-xl p-6 mb-10 text-center border border-primary/10">
               <h3 className="font-display text-xl font-bold text-primary mb-3">GARANTIA TOTAL DE 7 DIAS</h3>
-              <p className="text-foreground/70 mb-1">Se não fizer sentido, se não conectar, se não ajudar...</p>
-              <p className="text-foreground font-bold text-lg">Devolvo 100% do seu dinheiro.</p>
+              <p className="text-foreground/70 mb-1">Se você não gostar, não se identificar, ou sentir que não fez sentido, eu devolvo 100% do seu dinheiro.</p>
               <p className="text-foreground/50 italic text-sm mt-1">Sem perguntas, sem burocracia.</p>
             </div>
 
             <div className="text-center">
-              <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,32</CTAButton>
+              <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,72</CTAButton>
               <p className="text-foreground font-bold mt-6">Você já estudou demais para continuar travada.</p>
               <p className="text-foreground/60">Chegou a hora de usar o que você sabe.</p>
             </div>
@@ -296,13 +302,15 @@ const Index = () => {
         <h2 className="font-display text-2xl md:text-3xl font-bold text-center mb-10">PERGUNTAS FREQUENTES</h2>
         <div className="space-y-4">
           {[
-            ["Quanto tempo leva?", "Até 3 dias úteis após você fazer o teste."],
-            ["Preciso ter negócio?", "Não. Só vontade de viver do que você sabe."],
-            ["É realmente personalizado?", "Sim. Eu analiso e gravo um áudio só para você."],
-            ["E se não gostar?", "Devolvo 100% do seu dinheiro em 7 dias."],
+            ["Quanto tempo leva para eu receber meu Mapa L.E.D de Personalidade?", "Até 3 dias úteis após você fazer o teste e me enviar o resultado em PDF."],
+            ["Eu preciso já ter negócio próprio para fazer o Mapa L.E.D de Personalidade?", "Não. Você só precisa ter conhecimento em desenvolvimento humano e o desejo de viver do que sabe – seja como autônoma, prestando serviços, criando atendimentos, mentorias ou se preparando para essa transição."],
+            ["Como eu acesso o teste de personalidade?", "Assim que você fizer a compra, você será direcionada para a página do teste com todas as instruções. No final, você baixa o resultado em PDF e me envia conforme o passo a passo que vou te mandar."],
+            ["O áudio e o protocolo são realmente personalizados?", "Sim. Eu não envio materiais prontos. Eu leio seu resultado, analiso seu perfil e gravo um áudio específico para você, junto com um protocolo anti-trava adaptado ao seu padrão."],
+            ["E se eu não gostar ou sentir que não fez sentido para mim?", "Você tem 7 dias de garantia a partir da compra. Se não fizer sentido, basta pedir e eu devolvo 100% do seu dinheiro."],
+            ["Preciso ter muito tempo disponível para aplicar o protocolo?", "Não. O protocolo é pensado para se encaixar na sua rotina, com ações simples e estratégicas que, somadas, te tiram da trava e te colocam em movimento."],
           ].map(([q, a], i) => (
             <div key={i} className="bg-card border border-border rounded-xl p-6">
-              <p className="font-bold text-foreground mb-1">{q}</p>
+              <p className="font-bold text-foreground mb-2">{q}</p>
               <p className="text-foreground/60">{a}</p>
             </div>
           ))}
@@ -317,7 +325,7 @@ const Index = () => {
         <p className="text-foreground/60 mb-8">Sem mais travas. Sem mais "quase".</p>
         <CTAButton>🗺️ CLIQUE AQUI PARA DESTRAVAR SUA EXECUÇÃO</CTAButton>
         <p className="text-muted-foreground text-sm mt-4 italic">
-          12x R$ 30,32 • Garantia de 7 dias • Suporte personalizado
+          12x R$ 30,72 • Garantia de 7 dias • Suporte personalizado
         </p>
       </Section>
 
