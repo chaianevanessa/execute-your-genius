@@ -55,7 +55,7 @@ const Index = () => {
           <p className="text-foreground/70 mb-8">
             E receba um protocolo personalizado para nunca mais travar na hora de executar
           </p>
-          <CTAButton>🗺️ QUERO MEU MAPA LED AGORA — 12x R$ 30,72</CTAButton>
+          <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,32</CTAButton>
           <p className="text-muted-foreground text-sm mt-4 italic">Menos que um curso que você não aplicou</p>
         </motion.div>
       </Section>
@@ -106,7 +106,7 @@ const Index = () => {
           </motion.h2>
 
           <motion.div variants={fadeUp} custom={1} className="bg-card border border-primary/20 rounded-2xl p-8 md:p-10 mb-12">
-            <h3 className="font-display text-2xl font-bold text-primary mb-2">Mapa LED de Personalidade</h3>
+            <h3 className="font-display text-2xl font-bold text-primary mb-2">Mapa L.E.D de Personalidade</h3>
             <p className="text-foreground/60 italic mb-8">
               "Descubra seu padrão. Destrave sua execução. Viva do que você ama."
             </p>
@@ -283,7 +283,7 @@ const Index = () => {
             </div>
 
             <div className="text-center">
-              <CTAButton>🗺️ QUERO MEU MAPA LED AGORA — 12x R$ 30,72</CTAButton>
+              <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,32</CTAButton>
               <p className="text-foreground font-bold mt-6">Você já estudou demais para continuar travada.</p>
               <p className="text-foreground/60">Chegou a hora de usar o que você sabe.</p>
             </div>
