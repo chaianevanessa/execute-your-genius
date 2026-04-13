@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import vanessaImg from "@/assets/vanessa-hero.jpg";
+import vanessaImg from "@/assets/vanessa-hero.png";
 import CTAButton from "@/components/CTAButton";
 
 const fadeUp = {
@@ -55,8 +55,8 @@ const Index = () => {
           <p className="text-foreground/70 mb-8">
             E receba um protocolo personalizado para nunca mais travar na hora de executar
           </p>
-          <CTAButton>🗺️ QUERO MEU MAPA LED AGORA — 12x R$ 30,72</CTAButton>
-          <p className="text-muted-foreground text-sm mt-4 italic">Menos que um livro que você não aplicou</p>
+          <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,32</CTAButton>
+          <p className="text-muted-foreground text-sm mt-4 italic">Menos que um curso que você não aplicou</p>
         </motion.div>
       </Section>
 
@@ -90,7 +90,7 @@ const Index = () => {
             A VERDADE QUE NINGUÉM TE CONTA:
           </motion.h2>
           <motion.p variants={fadeUp} custom={1} className="text-xl font-bold text-foreground mb-2">
-            Não é falta de preparo. É excesso de autossabotagem.
+            Não é falta de preparo. É falta de conhecer o seu perfil comportamental com base no Big Five, a teoria de personalidade mais recente.
           </motion.p>
           <motion.p variants={fadeUp} custom={2} className="text-foreground/60">
             Seu maior inimigo não está lá fora. Está no seu padrão de pensar e agir.
@@ -106,7 +106,7 @@ const Index = () => {
           </motion.h2>
 
           <motion.div variants={fadeUp} custom={1} className="bg-card border border-primary/20 rounded-2xl p-8 md:p-10 mb-12">
-            <h3 className="font-display text-2xl font-bold text-primary mb-2">Mapa LED de Personalidade</h3>
+            <h3 className="font-display text-2xl font-bold text-primary mb-2">Mapa L.E.D de Personalidade</h3>
             <p className="text-foreground/60 italic mb-8">
               "Descubra seu padrão. Destrave sua execução. Viva do que você ama."
             </p>
@@ -133,7 +133,7 @@ const Index = () => {
           </motion.h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              "Você clica no botão e faz o teste rápido",
+              "Você clica no botão e faz o teste",
               "Eu analiso seu perfil pessoalmente",
               "Você recebe um áudio explicando SEU padrão + protocolo anti-trava",
               "Aplica e para de travar (ou devolvo seu dinheiro)",
@@ -180,19 +180,34 @@ const Index = () => {
             </motion.div>
           </div>
 
-          <motion.div variants={fadeUp} custom={3} className="bg-muted rounded-xl p-8">
-            <h3 className="font-display text-xl font-bold text-center mb-6">ISSO É PARA VOCÊ SE:</h3>
-            {[
-              ["Sonha", "em ser uma profissional bem paga e reconhecida"],
-              ["Teme", "estar no caminho errado (não está)"],
-              ["Justifica", 'seus "erros" como excesso de preparo (é virtude)'],
-              ["Suspeita", "que tinha que estudar mesmo (tinha)"],
-              ["Identifica", "seu inimigo: a autossabotagem disfarçada de perfeccionismo"],
-            ].map(([bold, rest], i) => (
-              <p key={i} className="text-foreground/80 mb-2">
-                {i + 1}. <strong className="text-foreground">{bold}</strong> {rest} ✅
+          <motion.div variants={fadeUp} custom={3} className="grid md:grid-cols-2 gap-6">
+            <div className="bg-muted rounded-xl p-8 border border-primary/20">
+              <h3 className="font-display text-xl font-bold text-primary mb-6">Para quem é o Mapa L.E.D de Personalidade</h3>
+              <p className="text-foreground font-bold mb-3">Para mulheres que:</p>
+              {[
+                "já estudaram muito desenvolvimento humano",
+                "sentem que nasceram para ajudar pessoas",
+                "querem viver do que sabem",
+                "sentem que têm algo importante para compartilhar",
+                "mas ainda se sentem travadas",
+              ].map((t, i) => (
+                <p key={i} className="text-foreground/80 mb-2">• {t}</p>
+              ))}
+            </div>
+            <div className="bg-muted rounded-xl p-8 border border-accent/20">
+              <h3 className="font-display text-xl font-bold text-accent mb-6">Para quem NÃO é</h3>
+              <p className="text-foreground font-bold mb-3">Não é para quem:</p>
+              {[
+                "está procurando fórmula mágica",
+                "não está disposta a agir",
+                "quer apenas mais conteúdo",
+              ].map((t, i) => (
+                <p key={i} className="text-foreground/60 mb-2">• {t}</p>
+              ))}
+              <p className="text-foreground/80 mt-4 italic text-sm">
+                O Mapa L.E.D de Personalidade é para quem está pronta para dar um passo real na própria vida profissional.
               </p>
-            ))}
+            </div>
           </motion.div>
         </motion.div>
       </Section>
@@ -252,8 +267,9 @@ const Index = () => {
 
             <div className="text-center mb-10">
               <h3 className="font-display text-xl font-bold text-primary mb-4">INVESTIMENTO:</h3>
-              <p className="text-3xl md:text-4xl font-bold text-foreground mb-1">
-                12x de <span className="text-gradient-gold">R$ 30,72</span>
+              <p className="text-foreground mb-1">
+                <span className="text-lg">12x de</span>{" "}
+                <span className="text-gradient-gold text-3xl md:text-4xl font-bold">R$ 30,<span className="text-4xl md:text-5xl">32</span></span>
               </p>
               <p className="text-foreground/50 mb-4">ou R$ 297,00 à vista</p>
               <p className="text-foreground/60 italic">Menos que um jantar fora. Mais que sua próxima trava.</p>
@@ -267,7 +283,7 @@ const Index = () => {
             </div>
 
             <div className="text-center">
-              <CTAButton>🗺️ QUERO MEU MAPA LED AGORA — 12x R$ 30,72</CTAButton>
+              <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,32</CTAButton>
               <p className="text-foreground font-bold mt-6">Você já estudou demais para continuar travada.</p>
               <p className="text-foreground/60">Chegou a hora de usar o que você sabe.</p>
             </div>
@@ -301,7 +317,7 @@ const Index = () => {
         <p className="text-foreground/60 mb-8">Sem mais travas. Sem mais "quase".</p>
         <CTAButton>🗺️ CLIQUE AQUI PARA DESTRAVAR SUA EXECUÇÃO</CTAButton>
         <p className="text-muted-foreground text-sm mt-4 italic">
-          12x R$ 30,72 • Garantia de 7 dias • Suporte personalizado
+          12x R$ 30,32 • Garantia de 7 dias • Suporte personalizado
         </p>
       </Section>
 
