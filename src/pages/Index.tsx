@@ -317,7 +317,7 @@ const Index = () => {
         <p className="text-foreground/60 mb-8">Sem mais travas. Sem mais "quase".</p>
         <CTAButton>🗺️ CLIQUE AQUI PARA DESTRAVAR SUA EXECUÇÃO</CTAButton>
         <p className="text-muted-foreground text-sm mt-4 italic">
-          12x R$ 30,72 • Garantia de 7 dias • Suporte personalizado
+          12x R$ 30,32 • Garantia de 7 dias • Suporte personalizado
         </p>
       </Section>
 
