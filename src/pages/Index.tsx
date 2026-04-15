@@ -55,8 +55,8 @@ const Index = () => {
           <p className="text-foreground/70 mb-8">
             E receba um protocolo personalizado para nunca mais travar na hora de executar
           </p>
-          <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,72</CTAButton>
-          <p className="text-muted-foreground text-sm mt-4 italic">Menos que um curso que você não aplicou</p>
+          <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA</CTAButton>
+          <p className="text-muted-foreground text-sm mt-4 italic">Menos que um curso que você comprou e não aplicou</p>
         </motion.div>
       </Section>
 
@@ -90,7 +90,7 @@ const Index = () => {
             A VERDADE QUE NINGUÉM TE CONTA:
           </motion.h2>
           <motion.p variants={fadeUp} custom={1} className="text-xl font-bold text-foreground mb-2">
-            Não é falta de preparo. É falta de conhecer o seu perfil comportamental com base no Big Five, a teoria de personalidade mais recente.
+            Não é falta de preparo. É falta de conhecimento do seu perfil comportamental, inspirado no Big Five, um dos modelos de personalidade mais utilizado atualmente.
           </motion.p>
           <motion.p variants={fadeUp} custom={2} className="text-foreground/60">
             Seu maior inimigo não está lá fora. Está no seu padrão de pensar e agir.
@@ -134,7 +134,7 @@ const Index = () => {
           <div className="space-y-4">
             {[
               "Você clica no botão e garante seu Mapa L.E.D de Personalidade.",
-              "Após a compra, você é direcionada para fazer um teste rápido de personalidade.",
+              "Após a compra, você é direcionada para fazer um teste de personalidade.",
               "Você me envia o resultado em PDF.",
               "Eu analiso seu perfil, gravo um áudio só para você e te entrego um protocolo anti-trava personalizado.",
               "Você recebe tudo em até 3 dias úteis após me enviar o resultado.",
@@ -289,7 +289,7 @@ const Index = () => {
             </div>
 
             <div className="text-center">
-              <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA — 12x R$ 30,72</CTAButton>
+              <CTAButton>🗺️ QUERO MEU MAPA L.E.D DE PERSONALIDADE AGORA</CTAButton>
               <p className="text-foreground font-bold mt-6">Você já estudou demais para continuar travada.</p>
               <p className="text-foreground/60">Chegou a hora de usar o que você sabe.</p>
             </div>
