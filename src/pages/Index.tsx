@@ -244,6 +244,23 @@ const Index = () => {
         </motion.div>
       </Section>
 
+      {/* O QUE É / NÃO É */}
+      <Section className="bg-muted">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center">
+          <motion.div variants={fadeUp} custom={0} className="max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
+              <strong className="text-foreground">Não é mentoria. Não é consultoria. Não é só um "teste". E não é um atendimento 1:1.</strong>
+            </p>
+            <p className="text-lg text-foreground/70 mt-6 leading-relaxed">
+              É uma devolutiva personalizada, onde você entende — com clareza — como o seu perfil comportamental está impactando diretamente sua vida profissional.
+            </p>
+            <p className="text-lg text-foreground/70 mt-4 leading-relaxed">
+              E mais do que isso: você recebe um direcionamento prático, com protocolo de execução, para começar a ajustar esses padrões na prática.
+            </p>
+          </motion.div>
+        </motion.div>
+      </Section>
+
       {/* OFERTA */}
       <Section className="bg-card">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }}>
